@@ -10,7 +10,7 @@ const CompSci=function(a,b,c) {
  };
 
   const hptns=function(p,q) {
-  	const l=Math.sqrt(p*p+ q*q);
+  	const l=Math.sqrt(p*p+q*q);
   };
  
       
