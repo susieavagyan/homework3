@@ -26,11 +26,11 @@ const string=function(x,y,z) {
 };
 
 
-const number=function(a,b) {
+const number=function(num1,num2) {
 
-  if(a===b) {
+  if(num1===num2) {
   	return 0;
-  } else if (a>b) {
+  } else if (num1>num2) {
   	return 1;
   } else {
   	return -1;
@@ -58,10 +58,9 @@ const triangleArea=function(base,height) {
  	return b.length;
  }
 
-
- const compare=function(a,b,c) {
-  const d=a+b
-  if (d.length>c) {
+ const compare=function(string1,string2,number) {
+  const d=string1+string2
+  if (d.length>number) {
   	return 1;
   } else { 
   	return -1; 
@@ -70,11 +69,10 @@ const triangleArea=function(base,height) {
  
 
  const runStuff=function(a,b,c) {
-
  	if (a==="rectangle") {
- 			return mult(b,c);
+		 return mult(b,c);
  			
- 		} else if (a==="triangle") {
+ 	} else if (a==="triangle") {
  		return triangleArea(b,c);
  	} else {
  		return -1;
